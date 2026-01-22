@@ -184,16 +184,6 @@ Example:
   explanation="This bar chart shows the all-time race win leaders..."
 />
 ```
-
-## 🚀 Future Enhancements
-
-- [ ] Add more statistical analyses
-- [ ] Driver comparison tool
-- [ ] Race predictions
-- [ ] Mobile responsive design improvements
-- [ ] Export charts as images
-- [ ] More historical context cards
-
 ## 📜 License
 
 MIT License - Feel free to use and modify for educational purposes.
@@ -202,3 +192,4 @@ MIT License - Feel free to use and modify for educational purposes.
 
 Built with ❤️ for F1 fans and data enthusiasts
 #
+
