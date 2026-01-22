@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+@theme {
+  --color-f1-dark: #0a0a0a;
+  --color-f1-darker: #050505;
+  --color-f1-red: #ff1c2e;
+  --color-f1-red-dark: #cc1625;
+  --color-f1-gray: #1a1a1a;
+  --color-f1-gray-light: #2a2a2a;
+  --color-f1-text: #ffffff;
+  --color-f1-text-muted: #888888;
+  --font-family-display: "Inter", "Rajdhani", sans-serif;
+  --font-family-mono: "Fira Code", "Monaco", monospace;
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZ9hiJ-Ek-_EeA.woff2') format('woff2');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family-display);
+  background-color: var(--color-f1-dark);
+  color: var(--color-f1-text);
+  min-height: 100vh;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-f1-darker);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-f1-gray-light);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-f1-red);
+}
+
+.code-block {
+  font-family: var(--font-family-mono);
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  border: 1px solid #ff1c2e33;
+  border-radius: 8px;
+  padding: 1rem;
+  overflow-x: auto;
+  box-shadow: 0 0 20px rgba(255, 28, 46, 0.1);
+}
+
+.glow-red {
+  box-shadow: 0 0 20px rgba(255, 28, 46, 0.3);
+}
+
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 40px rgba(255, 28, 46, 0.2);
+}
+
+.slide-in {
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
